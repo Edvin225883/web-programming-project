@@ -6,10 +6,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
-    margin-top: 70px;
+    margin-top: 40px;
     font-size: 50px;
     height: 20px;
     text-align: center;
@@ -17,8 +19,10 @@ h1{
 }
 
 .login-page{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 60px;
     border-width: 1px;
     border-color: rgb(71, 255, 12);
@@ -30,16 +34,31 @@ h1{
     box-shadow: 30px 40px 50px rgb(0, 38, 255);
 }
 
+.register-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    border-width: 1px;
+    border-color: rgb(71, 255, 12);
+    border-style: solid;
+    height: 600px;
+    width: 400px;
+    margin-top: 150px;
+    backdrop-filter: blur(10px);
+    box-shadow: 30px 40px 50px rgb(0, 38, 255);
+}
+
 .input-box{
-    width: 300px;
-    margin: 0px 0px 10px 35px;
+    margin-bottom: 10px;
 }
 
 .input-box input{
     font-weight: bold;
     font-size: 16px;
+    width: 300px;
     height: 50px;
-    width: 100%;
     border-radius: 25px;
     padding-left: 22px;
     transition: border-color 0.2s, border-width 0.10s;
@@ -47,6 +66,7 @@ h1{
     border-width: 1px;
     border-style: solid;
     border-color: gray;
+    color: white;
 }
 
 .input-box input:hover{
@@ -60,18 +80,16 @@ h1{
 }
 
 .show-password{
-    margin-left: 220px;
+    margin-left: 185px;
 }
 
-.elements{
-    display: flex;
-    justify-content: center;
-}
 .login-b{
+    display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 30px;
     height: 60px;
-    width: 80%;
+    width: 320px;
     border-radius: 30px;
     border-width: 0px;
     font-size: 16px;
@@ -90,12 +108,22 @@ h1{
     border: 3px solid rgb(71, 255, 12);
 }
 
+.regist{
+    margin-top: 10px;
+}
+
 .reg-b{
     margin-left: 10px; 
     font-weight: bold;
+    display: inline-block;
 }
 
 .reg-b:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+a:visited{
+    color:white;
+    text-decoration: none;
 }

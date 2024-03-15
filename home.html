@@ -9,27 +9,48 @@
 </head>
 <body>
     <header>
-        <button class="home-b">
-            <img class="icon" src="assets/home/icons/download.jpg" alt="Home">
-        </button>
+        <section class="navbar">
+            <button class="home-b">
+                <img class="icon" src="assets/home/icons/download.jpg" alt="Home">
+            </button>
+            
+            <div class="nav-buttons">
+                <button>Store</button>
+                <div class="dropdown">
+                    <button class="dropbtn">Account</button>
+                    <div class="dropdown-content">
+                      <a href="#">Orders</a>
+                      <a href="#">Settings</a>
+                      <a href="#">Log Out</a>
+                    </div>
+                  </div>
+                <button>About</button>
+                <button>Support</button>
+            </div>
+    
+            <button class="cart-b">
+                <img class="icon" src="assets/home/icons/cart.jpg" alt="">
+            </button>
+            
+            <div class="hamb-menu">
+                <img src="assets/home/icons/menu.png" alt="">
+            </div>
 
-        <div class="nav-buttons">
-            <button>Store</button>
-            <div class="dropdown">
-                <button class="dropbtn">Account</button>
-                <div class="dropdown-content">
-                  <a href="#">Orders</a>
-                  <a href="#">Settings</a>
-                  <a href="#">Log Out</a>
-                </div>
-              </div>
-            <button>About</button>
-            <button>Support</button>
-        </div>
-
-        <button class="cart-b">
-            <img class="icon" src="assets/home/icons/cart.jpg" alt="">
-        </button>
+            <div class="dropdown-menu">
+                <li><button>Store</button></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Account</button>
+                    <div class="dropdown-content">
+                      <a href="#">Orders</a>
+                      <a href="#">Settings</a>
+                      <a href="#">Log Out</a>
+                    </div>
+                  </div></li>
+                <li><button>About</button></li>
+                <li><button>Support</button></li>
+                <li><button>Cart</button></li>
+            </div>
+        </section>
     </header>
     <div class="motd">
         <p>Message of the day. Click <u>here</u> for more details.</p>
@@ -41,7 +62,7 @@
     </div>
 
     <div class="products-menu">
-        <h2 style="margin-top: 70px; font-size: 30px;"><i>EXPLORE OUR PRODUCTS</i></h2>
+        <h2 style="margin-top: 70px; font-size: 30px; text-align: center;"><i>EXPLORE OUR PRODUCTS</i></h2>
 
         <sector class="products-menu-cat">
             <button class="product-b">
@@ -87,6 +108,15 @@
 
         </div>
     </div>
-    
+    <script>
+        const toggleBtn = document.querySelector(".hamb-menu")
+        const toggleBtnIcon = document.querySelector(".hamb-menu")
+        const dropDownMenu = document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+        }
+    </script>
 </body>
 </html>

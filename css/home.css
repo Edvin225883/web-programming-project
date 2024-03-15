@@ -1,70 +1,105 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    overflow: auto;
 }
 
 header{
     background-color: black;
-    margin-top: -10px;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    align-items: center;
-    height: 70px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     border-bottom-width: 2px;
     border-bottom-color: rgb(68,214,44);
     border-style: solid;
+    min-width: 0px;
+    height: 55px;
+    overflow: hidden;
 }
 
-header button{
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100%;
+    padding: 0px 10%;
+}
+
+.navbar button{
+    border-width: 0px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.15s, font-size 0.15s;
     cursor: pointer;
 }
 
+.nav-buttons button{
+    margin: 0px 30px;
+}
+
+.navbar button:hover{
+    color: white;
+    font-size: 20px;
+}
+
 .icon{
-    margin-top: 10px;
     height: 50px;
 }
 
 .home-b{
-    margin-left: 200px;
+    padding: 0px;
     width: 80px;
     background-color: transparent;
     border-width: 0px;
 }
 
 .cart-b{
-    margin-right: 200px;
+    padding: 0px;
     width: 70px;
     height: 100%;
     background-color: transparent;
     border-width: 0px;
 }
 
-.nav-buttons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0px 330px;
+.hamb-menu{
+    display: none;
 }
 
-.nav-buttons button{
-    border-width: 0px;
-    background-color: transparent;
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-    margin: 0px 30px;
-    transition: color 0.15s, font-size 0.15s;
+@media (max-width: 1100px) {
+    .nav-buttons, .cart-b{
+        display: none;
+    }
+    .navbar{
+        padding: 0%;
+    }
+    .hamb-menu{
+        display: block;
+        padding-right: 25px;
+    }
+    header:hover{
+        overflow: visible;
+    }
 }
 
-.nav-buttons button:hover{
-    color: white;
-    font-size: 20px;
+.dropdown-menu{
+    position: absolute;
+    right: 0;
+    top: 55px;
+    display: block;
+}
+
+.dropdown-menu li{
+    padding: 15px 0px;
+    background-color: black;
+    width: 130px;
 }
 
 .dropbtn {
     color: #555;
-    padding: 16px;
     font-size: 16px;
     border: none;
   }
@@ -103,7 +138,7 @@ header button{
 
 .motd{
     text-align: center;
-    padding-top: 63px;
+    padding-top: 55px;
     color: white;
     font-size: 15px;
     background-color: #555;
@@ -151,12 +186,25 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
+    height: fit-content;
 }
 
 .products-menu-cat{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 35px;
+}
+
+@media (max-width: 1500px) {
+    .products-menu-cat{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-menu-cat{
+        grid-template-columns: 1fr ;
+    }
 }
 
 .product-b{
@@ -192,7 +240,7 @@ h1{
     align-items: center;
     margin-top: 40px;
     background-color: black;
-    height: 700px;
+    height: fit-content;
 }
 
 h3{
@@ -205,6 +253,20 @@ h3{
 .best-seller-products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 120px;
+}
+
+@media (max-width: 1650px) {
+    .best-seller-products{
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    .best-seller-products button{
+        grid-template-columns: 1fr;
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
 .best-seller-products button{
@@ -214,7 +276,7 @@ h3{
     align-items: center;
     height: 430px;
     width: 430px;
-    margin: 0px 55px;
+    margin: 0px 7px;
     background-color: white;
     border-width: 0px;
     cursor: pointer;

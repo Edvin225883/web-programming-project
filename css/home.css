@@ -1,12 +1,11 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    height: 5000px;
+    margin: 0px;
 }
 
 header{
     background-color: black;
     margin-top: -10px;
-    margin-left: -8px;
     display: flex;
     height: 70px;
     width: 100%;
@@ -17,7 +16,8 @@ header{
 }
 
 .icon{
-    height: 40px;
+    margin-top: 10px;
+    height: 50px;
 }
 
 .home-b{
@@ -28,9 +28,8 @@ header{
 }
 
 .motd{
+    text-align: center;
     padding-top: 63px;
-    margin-left: -8px;
-    padding-left: 16px;
     color: white;
     font-size: 15px;
     background-color: #555;
@@ -42,11 +41,11 @@ header{
 }
 
 .home-ad{
-    margin-left: -8px;
-    background-image: url("/web-programming-project/assets/home/test.jpg");
-    height: 300px;
+    background-image: url("/assets/home/homeadddd.jpg");
+    height: 370px;
+    width: 100%;
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,8 +53,9 @@ header{
 }
 
 h1{
+    text-align: center;
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 65px;
     color: white;
     font-size: 90px;
     -webkit-text-stroke: 4px;
@@ -63,14 +63,106 @@ h1{
 }
 
 .home-ad-msg{
+    text-align: center;
     margin: 0px 0px 95px 0px;
     color: white;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
     -webkit-text-stroke: 0px;
     -webkit-text-stroke-color: black;
-    background-color: black;
 }
 
+.products-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+}
 
+.products-menu-cat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
+.product-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 280px;
+    margin: 0px 5px;
+    background-color: transparent;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.product-b p{
+    transition: color 0.15s;
+}
+
+.product-b:hover p{
+    text-decoration: underline;
+    color: red;
+}
+
+.button-t{
+    margin-top: 30px;
+}
+
+.best-sellers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    background-color: black;
+    height: 700px;
+}
+
+h3{
+    margin-top: 60px;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.best-seller-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.best-seller-products button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    width: 430px;
+    margin: 0px 55px;
+    background-color: white;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.best-seller-products button img{
+    height: 80%;
+    margin-top: 0px;
+    overflow: hidden;
+}
+
+.best-seller-products button p{
+    margin-top: 0px;
+    font-size: 26px;
+    text-align: center;
+    transition: font-size 0.2s;
+}
+
+.best-seller-products button:hover p{
+    margin-top: 0px;
+    font-size: 46px;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}

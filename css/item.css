@@ -243,6 +243,9 @@ header{
 }
 
 @media (max-width: 715px) {
+    .actions{
+        justify-content: center;
+    }    
     .related{
         padding-top: 50px;
     }

@@ -15,7 +15,6 @@ header{
     border-style: solid;
     min-width: 0px;
     height: 55px;
-    overflow: hidden;
 }
 
 .navbar{
@@ -80,6 +79,9 @@ header{
         display: block;
         padding-right: 25px;
     }
+    header{
+        overflow: hidden;
+    }
     header:hover{
         overflow: visible;
     }
@@ -89,7 +91,8 @@ header{
     position: absolute;
     right: 0;
     top: 55px;
-    display: block;
+    display: none;
+    display: none;
 }
 
 .dropdown-menu li{
@@ -102,39 +105,39 @@ header{
     color: #555;
     font-size: 16px;
     border: none;
-  }
+}
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  .dropdown-content a {
+.dropdown-content a {
     color: #555;
     font-weight: bold;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     transition: background-color 0.1s, font-size 0.2s;
-  }
+}
   
-  .dropdown-content a:hover {
-      background-color: white;
-      font-size: 20px;
-  }
+.dropdown-content a:hover {
+    background-color: white;
+    font-size: 20px;
+}
   
-  .dropdown:hover .dropdown-content{
-      display: block;
-  }
+.dropdown:hover .dropdown-content{
+    display: block;
+}
 
 .motd{
     text-align: center;
@@ -293,6 +296,8 @@ h3{
     font-size: 26px;
     text-align: center;
     transition: font-size 0.2s;
+    white-space: normal;
+    word-break: break-all;
 }
 
 .best-seller-products button:hover p{

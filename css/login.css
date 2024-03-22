@@ -29,7 +29,7 @@ h1{
     border-style: solid;
     height: 550px;
     width: 400px;
-    margin-top: 150px;
+    margin: 10%;
     backdrop-filter: blur(10px);
     box-shadow: 30px 40px 50px rgb(0, 38, 255);
 }
@@ -45,7 +45,7 @@ h1{
     border-style: solid;
     height: 600px;
     width: 400px;
-    margin-top: 150px;
+    margin: 10%;
     backdrop-filter: blur(10px);
     box-shadow: 30px 40px 50px rgb(0, 38, 255);
 }

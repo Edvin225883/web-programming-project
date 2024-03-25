@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/spapp.css">
+        <link rel="stylesheet" href="./css/index.css">
+
+        <title>PC Best</title>
+    </head>
+    <header>
+        <section class="navbar">
+            <button class="home-b">
+                <img class="icon" src="./assets/home/icons/download.jpg" alt="Home">
+            </button>
+            
+            <div class="nav-buttons">
+                <button>Store</button>
+                <button>Account</button>
+                <button>Orders</button>
+                <button>About</button>
+                <button>Log Out</button>
+            </div>
+    
+            <button class="cart-b">
+                <img class="icon" src="./assets/home/icons/cart.jpg" alt="">
+            </button>
+            
+            <div class="hamb-menu">
+                <img src="./assets/home/icons/menu.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <body>
+        <main id="spapp" role="main">
+            <section id="home" data-load="home.html"></section>
+            <section id="store" data-load="store.html"></section>
+            <section id="about" data-load="about.html"></section>
+            <section id="account" data-load="account.html"></section>
+            <section id="cart" data-load="cart.html"></section>
+            <section id="orders" data-load="orders.html"></section>
+            <section id="item" data-load="item.html"></section>
+        </main>
+    </body>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/spapp.js"></script>
+    <script>
+        var app = $.spapp({
+        defaultView: "#home",
+        templateDir: "./html/"
+
+        });
+        app.run();
+    </script>
+
+</html>

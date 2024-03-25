@@ -125,40 +125,8 @@ header{
     border-bottom-color: #555;
 }
 
-.inputs{
+.main{
     padding: 100px 20%;
-    width: 100%;
-    height: 100%;
-}
-
-#label{
-    font-size: 24px;
-    display: inline;
-    margin-right: 15px;
-}
-
-#inp{
-    padding: 5px 5px;
-    font-size: 24px;
-    border-radius: 10px;
-    width: 50vw;
-}
-
-#sub {
-    height: 40px;
-    width: 110px;
-    background-color: red;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 20px;
-    margin-left: 20px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    transition: height 0.2s, width 0.2s, border-radius 0.2s, font-size 0.2s;
-}
-
-#sub:hover{
-    border-radius: 30px;
-    font-size: 19px;
+    padding-right: 10%;
+    height: 700px;
 }

@@ -1,0 +1,33 @@
+[
+    {
+        "name": "ASUS ROG Strix 4070Ti",
+        "type": "GPU",
+        "price": 1049.99,
+        "img": "../assets/kasnije/13600kf.jpg"
+    },
+    {
+        "name": "Intel i5-13600KF",
+        "type": "CPU",
+        "price": 309.99
+    },
+    {
+        "name": "ASUS ROG Strix 4070Ti",
+        "type": "GPU",
+        "price": 1049.99
+    },
+    {
+        "name": "Intel i5-13600KF",
+        "type": "CPU",
+        "price": 309.99
+    },
+    {
+        "name": "ASUS ROG Strix 4070Ti",
+        "type": "GPU",
+        "price": 1049.99
+    },
+    {
+        "name": "Intel i5-13600KF",
+        "type": "CPU",
+        "price": 309.99
+    }
+]

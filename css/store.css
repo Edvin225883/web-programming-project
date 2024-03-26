@@ -62,6 +62,7 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     height: fit-content;
+    min-height: 563px;
     width: 350px;
     margin: 30px 10px;
     position: relative;
